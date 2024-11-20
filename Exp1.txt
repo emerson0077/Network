@@ -1,0 +1,22 @@
+SA 				C
+
+GW				OW	
+G				O	
+OW				GW
+B				B
+BW				BW
+O				G
+BrW				BrW
+Br				Br
+
+
+SB
+
+OW
+O
+GW
+B
+BW
+G
+Brw
+B

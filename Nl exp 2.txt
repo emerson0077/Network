@@ -1,0 +1,43 @@
+Certainly! Here's an overview of some common network commands, their usage, and when they might be needed:
+
+1. **NETSTAT**:
+    - **Usage**: Displays network connections (both incoming and outgoing), routing tables, and network interface statistics.
+    - **Command Examples**:
+        - `netstat` - Displays all active connections.
+        - `netstat -a` - Displays all active connections and listening ports.
+        - `netstat -r` - Displays the routing table.
+        - `netstat -s` - Displays statistics for each protocol.
+    - **When Needed**: To troubleshoot network connections, check for active connections and open ports, or monitor network performance and traffic.
+
+2. **NSLOOKUP**:
+    - **Usage**: Queries the DNS to obtain domain name or IP address mapping or for any other specific DNS record.
+    - **Command Examples**:
+        - `nslookup www.example.com` - Resolves the domain name to its corresponding IP address.
+        - `nslookup 192.168.1.1` - Resolves the IP address to its corresponding domain name (if reverse lookup is set up).
+        - `nslookup` (enter interactive mode, then type domain name) - Allows more detailed queries and testing.
+    - **When Needed**: To verify DNS configurations, troubleshoot DNS issues, and ensure domain names are resolving correctly.
+
+3. **TRACERT** (or TRACEROUTE on Unix/Linux systems):
+    - **Usage**: Tracks the path packets take from the source to the destination and measures transit delays of packets.
+    - **Command Example**:
+        - `tracert www.example.com` - Shows the route taken to reach the specified domain.
+    - **When Needed**: To diagnose routing problems, identify where packets are getting delayed or lost, and understand the path data takes through the network.
+
+4. **ARP**:
+    - **Usage**: Displays and modifies the IP-to-Physical (MAC) address translation tables used by the Address Resolution Protocol.
+    - **Command Examples**:
+        - `arp -a` - Displays the current ARP table entries.
+        - `arp -d 192.168.1.1` - Deletes an entry for the specified IP address.
+        - `arp -s 192.168.1.1 00-14-22-01-23-45` - Adds a static entry to the ARP table.
+    - **When Needed**: To resolve issues with IP-to-MAC address mappings, particularly in cases of duplicate IP addresses or when network devices are not communicating properly.
+
+5. **IPCONFIG** (or IFCONFIG on Unix/Linux systems):
+    - **Usage**: Displays all current TCP/IP network configuration values and refreshes DHCP and DNS settings.
+    - **Command Examples**:
+        - `ipconfig` - Displays basic IP information for all network adapters.
+        - `ipconfig /all` - Displays detailed IP information including DNS, DHCP, and MAC addresses.
+        - `ipconfig /release` and `ipconfig /renew` - Releases and renews the DHCP lease.
+        - `ipconfig /flushdns` - Flushes the DNS resolver cache.
+    - **When Needed**: To check IP configuration, troubleshoot network connectivity issues, and manage IP address leases and DNS resolver cache.
+
+Each of these commands is essential for diagnosing and troubleshooting network-related issues, offering different levels of insight into network operations and configurations.
